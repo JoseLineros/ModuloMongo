@@ -1,0 +1,10 @@
+db.pokeData.find({$or: [
+    { name: {$eq: "Snorlax"} },
+    { name: {$eq: "Dratini"} },
+    { name: {$eq: "Charmander"} },
+    { name: {$eq: "Magikarp"} },
+    { id: {$eq: "025"} },
+    { id: {$eq: "035"} },
+    { id: {$eq: "123"} },
+    { id: {$eq: "151"} },
+]}).sort({name: 1}).pretty()
